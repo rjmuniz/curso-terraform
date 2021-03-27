@@ -1,0 +1,1 @@
+type_instance = "t2.micro"
