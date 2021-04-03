@@ -14,8 +14,8 @@ terraform {
 locals {
   conn_type        = "ssh"
   conn_user        = "ec2-user"
-  conn_timeout     = "1m"
-  conn_private_key = "file(var.pem_path)"
+  conn_timeout     = "5m"
+  conn_private_key = file("terraform_keyPair.pem")
 }
 
 resource "aws_instance" "web" {
