@@ -15,5 +15,5 @@ resource "aws_s3_bucket_object" "this" {
   bucket = aws_s3_bucket.this.id
   key    = var.object_key
   source = var.object_source
-  etag   = md5(file(var.object_source))
+  etag   = filemd5(var.object_source)
 }

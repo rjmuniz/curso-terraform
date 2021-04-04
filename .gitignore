@@ -31,3 +31,4 @@ override.tf.json
 
 
 *.pem
+01-terraform-basico/13-built-in-functions-e-templates/files/my-data.zip
